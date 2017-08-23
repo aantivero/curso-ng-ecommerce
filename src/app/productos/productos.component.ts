@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Producto } from "./producto";
+import { Producto } from './producto';
 
 @Component({
   selector: 'ecom-productos',

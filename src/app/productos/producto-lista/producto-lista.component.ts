@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Producto } from "../producto";
+import { Producto } from '../producto';
 
 @Component({
   selector: 'ecom-producto-lista',
@@ -11,7 +11,8 @@ export class ProductoListaComponent implements OnInit {
 
   @Output() productoSelected = new EventEmitter<Producto>();
 
-  producto = new Producto('Jhonny Walker', 'Jhonny Walker Black Label', 'https://img.clasf.com.ar/2015/09/06/Whisky-Johnny-Walker-Etiqueta-Negra-Colegiales-20150906234501.jpg');
+  producto = new Producto('Jhonny Walker', 'Jhonny Walker Black Label', 
+  'https://img.clasf.com.ar/2015/09/06/Whisky-Johnny-Walker-Etiqueta-Negra-Colegiales-20150906234501.jpg');
 
   constructor() { }
 
