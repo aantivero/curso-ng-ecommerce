@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-md-5">
+        <ecom-producto-lista (productoSelected)="selectedProducto = $event"></ecom-producto-lista>
+    </div>
+    <div class="col-md-7">
+        <ecom-producto-detalle [selectedProducto]="selectedProducto"></ecom-producto-detalle>
+    </div>
+</div>
