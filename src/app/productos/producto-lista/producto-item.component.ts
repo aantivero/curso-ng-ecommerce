@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Producto } from '../producto';
+import { Producto } from '../../shared/producto';
 
 @Component({
   selector: 'ecom-producto-item',
