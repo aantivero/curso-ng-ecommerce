@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
+import { DropDownDirective} from './dropdown.directive';
 import { ProductosComponent } from './productos/productos.component';
 import { ProductoListaComponent } from './productos/producto-lista/producto-lista.component';
 import { ProductoItemComponent } from './productos/producto-lista/producto-item.component';
@@ -14,6 +15,7 @@ import { CarritoListaAgregarComponent } from './carrito-lista/carrito-lista-agre
   declarations: [
     AppComponent,
     HeaderComponent,
+    DropDownDirective,
     ProductosComponent,
     ProductoListaComponent,
     ProductoItemComponent,
