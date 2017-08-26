@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Producto } from '../../shared/producto';
+import { Ingrediente } from '../../shared/ingrediente';
 
 @Component({
   selector: 'ecom-producto-lista',
@@ -8,7 +9,7 @@ import { Producto } from '../../shared/producto';
 export class ProductoListaComponent implements OnInit {
 
   productos: Producto[] = [
-    new Producto('algo', 'descripcion', 'imagen', []),
+    new Producto('algo', 'descripcion', 'imagen', [new Ingrediente('ingrediente1'), new Ingrediente('ingrediente2')]),
     new Producto('Jhonny Walker', 'Jhonny Walker Black Label',
   'https://img.clasf.com.ar/2015/09/06/Whisky-Johnny-Walker-Etiqueta-Negra-Colegiales-20150906234501.jpg', []),
    new Producto('Jhonny Walker 2', 'Jhonny Walker Black Label extend',
