@@ -1,4 +1,8 @@
 <md-nav-list>
-    <ecom-producto-item *ngFor="let producto of productos" [producto]="producto" (click)="onSelected(producto)">
-    </ecom-producto-item>
+    <!--<ecom-producto-item *ngFor="let producto of productos" [producto]="producto" (click)="onSelected(producto)">
+    </ecom-producto-item-->
+    <md-list-item *ngFor="let producto of productos" (click)="onSelected(producto)">
+        <md-icon>star</md-icon>
+        <span>{{producto.nombre}}</span>
+    </md-list-item>
 </md-nav-list>
