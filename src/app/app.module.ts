@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import 'hammerjs';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
 import { DropDownDirective} from './dropdown.directive';
