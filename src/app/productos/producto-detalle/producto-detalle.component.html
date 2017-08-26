@@ -1,25 +1,15 @@
-<div class="row">
-  <div class="col-xs-12">
-    <img src="{{selectedProducto?.imagen}}" alt="" class="img-responsive">
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-    <h1>{{selectedProducto?.nombre}}</h1>
-  </div>
-  <div class="col-xs-12">
-    <button class="btn btn-success">Comprar</button>
-    <button class="btn btn-primary">Editar</button>
-    <button class="btn btn-danger">Borrar</button>
-  </div>
-</div>
-<hr>
-<div class="row">
-  <div class="col-xs-12">
+<md-card fxFlex="80">
+  <md-card-header>
+    <md-card-title>{{selectedProducto?.nombre}}</md-card-title>
+  </md-card-header>
+  <img md-card-image src="{{selectedProducto?.imagen}}">
+  <md-card-content>
+    <h2>{{selectedProducto?.nombre}}</h2>
     <p>{{selectedProducto?.descripcion}}</p>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-  </div>
-</div>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button>Comprar</button>
+    <button md-button>Editar</button>
+    <button md-button>Borrar</button>
+  </md-card-actions>
+</md-card>
