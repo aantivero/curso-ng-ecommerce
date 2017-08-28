@@ -1,6 +1,6 @@
 
 import { HostBinding, Directive, HostListener } from '@angular/core';
-import { LogService } from './services/log.service';
+import { LogService } from './services/';
 
 @Directive({
     selector: '[ecomDropDown]'

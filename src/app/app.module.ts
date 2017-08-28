@@ -10,7 +10,7 @@ import { ProductoItemComponent } from './productos/producto-lista/producto-item.
 import { ProductoDetalleComponent } from './productos/producto-detalle/producto-detalle.component';
 import { CarritoListaComponent } from './carrito-lista/carrito-lista.component';
 import { CarritoListaAgregarComponent } from './carrito-lista/carrito-lista-agregar.component';
-import { LogService } from './services/log.service';
+import { LogService, ProductoService } from './services/';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { LogService } from './services/log.service';
   imports: [
     BrowserModule
   ],
-  providers: [LogService],
+  providers: [LogService, ProductoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
