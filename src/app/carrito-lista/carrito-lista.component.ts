@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CarritoListaService } from '../services/index';
+import { Ingrediente } from '../shared/ingrediente';
 
 @Component({
   selector: 'ecom-carrito-lista',
@@ -6,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarritoListaComponent implements OnInit {
 
-  constructor() { }
+  items: Ingrediente[] = [];
+
+  constructor(private carritoListaService: CarritoListaService) { }
 
   ngOnInit() {
+    this.items = this.carritoListaService.getIngredientes();
   }
 
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Producto } from '../../shared/producto';
+import { CarritoListaService } from '../../services/index';
 
 @Component({
   selector: 'ecom-producto-detalle',
@@ -9,9 +10,12 @@ export class ProductoDetalleComponent implements OnInit {
 
   @Input() selectedProducto: Producto;
 
-  constructor() { }
+  constructor(private carritoListaService: CarritoListaService) { }
 
   ngOnInit() {
   }
 
+  onAddToCarritoLista() {
+    this.carritoListaService.addIngredientes(this.selectedProducto.ingredientes);
+  }
 }
